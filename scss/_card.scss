@@ -1,0 +1,84 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 920px;
+    border-radius: 10px;
+    margin: 85px 25px 85px 25px;
+
+    .card-block {
+        padding: 50px;
+
+        .icon {
+            margin-bottom: 40px;
+        }
+
+        .card-text {
+            margin-bottom: 30px;
+
+            h2 {
+                font-family: 'Big Shoulders Display', cursive;
+                font-size: 2.7rem;
+                text-transform: uppercase;
+                color: $gray_bg;
+                margin-bottom: 30px;
+            }
+
+            p {
+                color: $white_p;
+                line-height: 1.6rem;
+            }
+        }
+
+        .button {
+            border: none;
+            height: 50px;
+            width: 150px;
+            border-radius: 50px;
+            font-family: 'Lexend Deca', sans-serif;
+            cursor: pointer;
+            transition: background border color .3s ease-in;
+
+            p {
+                text-transform: capitalize;
+                font-size: 1rem;
+            }
+        }
+
+        .button:hover {
+            background: none;
+            border: 2px solid $gray_bg;
+
+            p {
+                color: $gray_bg;
+            }
+        }
+    }
+
+    .sedans {
+        background: $bright_orange;
+        border-radius: 10px 10px 0px 0px;
+
+        .button > p {
+            color: $bright_orange;
+        }
+    }
+
+    .suvs {
+        background: $dark_cyan;
+
+        .button > p {
+            color: $dark_cyan;
+        }
+    }
+
+    .luxury {
+        background-color: $vdark_cyan;
+        border-radius: 0 0 10px 10px;
+
+        .button > p {
+            color: $vdark_cyan;
+        }
+    }
+}
+
+@import '_media';
