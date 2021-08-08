@@ -1,0 +1,22 @@
+@media screen and (min-width: 768px) {
+    .card {
+        flex-direction: row;
+
+        .card-block {
+            .card-text {
+                margin-bottom: 75px;
+            }
+        }
+
+        .sedans {
+            background: $bright_orange;
+            border-radius: 10px 0 0px 10px;
+        }
+
+        .luxury {
+            background-color: $vdark_cyan;
+            border-radius: 0 10px 10px 0;
+        }
+    }
+}
+
