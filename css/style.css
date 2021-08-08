@@ -1,0 +1,172 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  background: #f2f2f2;
+  font-weight: 400;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+}
+
+footer p {
+  color: black;
+}
+
+footer a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
+}
+
+footer a:hover {
+  color: #e38826;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 920px;
+  border-radius: 10px;
+  margin: 85px 25px 85px 25px;
+}
+
+.card .card-block {
+  padding: 50px;
+}
+
+.card .card-block .icon {
+  margin-bottom: 40px;
+}
+
+.card .card-block .card-text {
+  margin-bottom: 30px;
+}
+
+.card .card-block .card-text h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.7rem;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  margin-bottom: 30px;
+}
+
+.card .card-block .card-text p {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6rem;
+}
+
+.card .card-block .button {
+  border: none;
+  height: 50px;
+  width: 150px;
+  border-radius: 50px;
+  font-family: 'Lexend Deca', sans-serif;
+  cursor: pointer;
+  -webkit-transition: background border color .3s ease-in;
+  transition: background border color .3s ease-in;
+}
+
+.card .card-block .button p {
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.card .card-block .button:hover {
+  background: none;
+  border: 2px solid #f2f2f2;
+}
+
+.card .card-block .button:hover p {
+  color: #f2f2f2;
+}
+
+.card .sedans {
+  background: #e38826;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card .sedans .button > p {
+  color: #e38826;
+}
+
+.card .suvs {
+  background: #006970;
+}
+
+.card .suvs .button > p {
+  color: #006970;
+}
+
+.card .luxury {
+  background-color: #004241;
+  border-radius: 0 0 10px 10px;
+}
+
+.card .luxury .button > p {
+  color: #004241;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .card .card-block .card-text {
+    margin-bottom: 75px;
+  }
+  .card .sedans {
+    background: #e38826;
+    border-radius: 10px 0 0px 10px;
+  }
+  .card .luxury {
+    background-color: #004241;
+    border-radius: 0 10px 10px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
